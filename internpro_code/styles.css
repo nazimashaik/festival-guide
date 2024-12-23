@@ -1,0 +1,413 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    color: #111212;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(111, 109, 109, 0.8);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/031/713/515/non_2x/festival-themed-wall-hangings-diwali-background-ai-generated-free-photo.jpg');
+    transition: background 0.3s ease-in-out;
+    overflow-x: hidden;
+
+}
+/* Glassy Form Container */
+.glassy-form {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .glassy-form h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .glassy-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccccccce;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .glassy-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .glassy-form button:hover {
+    background-color: #0c8aeb;
+  }
+  
+  .glassy-form p {
+    color: #0c0f12;
+    margin-top: 10px;
+  }
+  
+  .glassy-form a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  /* Header and Buttons */
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f5f5f500;
+  }
+  
+  #nav-buttons button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #signup-btn {
+    background-color: #28a745;
+    color: white;
+    margin-left: 1300px;
+
+  }
+  #signup-btn :hover {
+    background-color: #09f2db;
+  }
+  #login-btn {
+    background-color: #067dfc;
+    color: white;
+  }
+  #login-btn :hover {
+    background-color: #009688;
+  }
+  /* Disable Search Bar */
+  #searchBar:disabled {
+    background-color: #e0e0e0;
+    color: #f9f3f38e;
+    cursor: not-allowed;
+  }
+#toggle-text a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#toggle-text a:hover {
+    text-decoration: underline;
+}
+  
+/*header {
+    text-align: center;
+    padding: 20px;
+    background: #e1e5e7d1;
+    border-radius: 20px;
+    width: 60%;
+    margin: 50px auto 20px auto; /* Transparent effect for the header */
+
+.header-glass {
+    margin-top: 40px;
+    padding: 40px;
+    text-align: center;
+    backdrop-filter: blur(10px) brightness(0.9);
+    background: rgba(212, 241, 247, 0.5);
+    border-radius: 10px;
+    width: 40%;
+    margin: 50px auto 20px auto;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#searchBar {
+    width: 50%;
+    padding: 12px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    background: rgba(218, 233, 246, 0.726);
+    color: #0c0f12;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+#searchBar:focus {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: #fff;
+}
+#results-container {
+    flex: 1;
+    padding: 20px;
+}
+/* New Festival Introduction Section */
+#festival-intro {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px) brightness(0.8);
+    border-radius: 20px;
+    width: 80%;
+    margin: 30px auto;
+    color: #fff;
+}
+
+#festival-intro h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffed87;
+}
+
+#festival-intro p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.festival-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.festival-card {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.festival-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.festival-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffa07a;
+}
+
+.festival-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+}
+#content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.content-block {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.196);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.content-block img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-color:black;
+}
+
+.content-block .text {
+    flex: 1;
+    color: #fff;
+    font-size: 19px;
+    text-align: justify;
+    transition: transform 0.2s;
+}
+#content-block  .text {
+    transform: scale(1.05);
+}
+.content-block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* New Section for Activities */
+#activities-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    color: #ddd;
+}
+
+
+#generate-activities {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#generate-activities:hover {
+    background-color: #45a049;
+}
+
+#activity-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#activity-list li {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+#activity-list li:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: rgba(104, 103, 103, 0.442);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* New Section for Create Plan */
+#create-plan-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#create-plan-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#create-plan-section #calendar {
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#create-plan-section #calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#create-plan-section #calendar th,
+#create-plan-section #calendar td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+#create-plan-section #calendar th {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+#create-plan-section #calendar td {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#create-plan-section #download-plan {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#create-plan-section #download-plan:hover {
+    background-color: #0056b3;
+}
+#plan-button {
+    background-color: #8bd8d0;
+}
+/* Share Tradition Section */
+#share-tradition-section {
+    margin-top: 20px;
+}
+
+#share-tradition-button {
+    padding: 10px 20px;
+    background-color:#45a049;
+    color: rgb(19, 18, 18);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#share-tradition-button:hover {
+    background-color: #04f9f9;
+}

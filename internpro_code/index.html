@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <div id="nav-buttons">
+          <button id="signup-btn">Sign Up</button>
+          <button id="login-btn">Log In</button>
+        </div>
+    </div>
+      
+      <!-- Authentication Container -->
+      <div id="auth-container" style="display: none;">
+        <div class="glassy-form">
+          <h2 id="form-header">Login</h2>
+          <form id="authForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+      
+            <label for="email" id="email-label" style="display: none;">Email:</label>
+            <input type="email" id="email" style="display: none;">
+      
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+      
+            <button type="submit" id="submit-btn">Login</button>
+          </form>
+          <p id="toggle-text">Don't have an account? <a href="#" id="toggle-link">Sign Up</a></p>
+          <p id="message"></p>
+        </div>
+      </div>
+<header>
+<!-- Main Content Section -->
+ <div id="main-container" style="display: none;">
+  </div>
+ <!-- Search and Activity Section -->
+  <div class ="header-glass">
+  <h1> Festival Guide</h1>
+  <p>Your ultimate guide to celebrations worldwide!</p>
+    <input type="text" placeholder="Search for a festival..."id="searchBar" disabled />
+
+    </div>
+ </div>
+</header>
+
+<!-- Glassy Container -->
+   <!-- New Festival Introduction Section -->
+  <section id="festival-intro">
+    <h2>Welcome to the Festival Guide</h2>
+    <p>Discover vibrant cultural festivals celebrated across the world. Explore the history, activities, and traditions of famous festivals like Holi, Diwali, and more!</p>
+    <div class="festival-card-container">
+      <div class="festival-card">
+        <h3>Festival of Colors - Holi</h3>
+        <p>Holi is a joyous celebration of colors, love, and spring. It marks the triumph of good over evil and is celebrated with colors, music, and food.</p>
+      </div>
+      <div class="festival-card">
+        <h3>Festival of Lights - Diwali</h3>
+        <p>Diwali is the festival of lights, symbolizing the victory of light over darkness and good over evil. It is celebrated with lights, prayers, and family gatherings.</p>
+      </div>
+    </div>
+  </section>
+  <div id="results-container">
+  <div id="content-section"></div>
+  </div>
+  <p style="color: rgb(112, 170, 221);text-align: center;font-size: 30px;"></p>
+ 
+  <!-- Festival Content (hidden initially) -->
+  <div id="festival-content" style="display: none;">
+    <!-- Festival results will be dynamically displayed here -->
+  </div>
+  
+    <div id="activities-section">
+      <button id="generate-activities" style="display: none;">Generate Activities</button>
+        <ul id="activity-list"></ul>
+        
+    </div>
+
+    <!-- Plan and Calendar Elements -->
+    <button id="plan-button" style="display: none;">Create Plan</button>
+    <input type="date" id="date-picker" style="display: none;">
+    <button id="share-tradition-button" style="display: none;">Share Tradition</button>
+</div>
+
+<footer>
+    <p>© 2024 Festive Guide. All rights reserved.</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
